@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Code Pro Light";
+  src: url("./assets/fonts/Code-Pro-Light-LC.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Code Pro regular";
+  src: url("./assets/fonts/Code-Pro-LC.otf") format("opentype");
+}
+@font-face {
+  font-family: "Code Pro bold";
+  src: url("./assets/fonts/Code-Pro-Bold-LC.otf") format("opentype");
+}
+@layer base {
+  html {
+    font-family: "Code Pro regular";
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3eaf9ab2;
+  border-radius: 2px;
+}
+
+
+section {
+  padding-top: 5rem;
+}
+body {
+  background-color: #090913;
+}
+
+h1,
+h2 {
+  line-height: 1;
+}
+
+p,
+span {
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  line-height: -0.8;
+  font-weight: 400;
+}
+
+p,
+a {
+  line-height: -0.8;
+}
+
+a {
+  padding-top: 0.15rem;
+}
+
+
+.container {
+  margin: auto;
+  max-width: 75rem;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.green-grnt {
+  background: rgb(67, 175, 155);
+  background: linear-gradient(
+    150deg,
+    rgba(42, 137, 119, 1) 0%,
+    rgba(33, 124, 107, 1) 20%,
+    rgba(0, 75, 61, 1) 100%
+  );
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  img {
+    width: auto;
+  }
+}
+
+
+.text-animation::after {
+  visibility: hidden;
+}
